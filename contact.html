@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Title for browser tab -->
+	<title>Contact</title>
+	<!-- linking to "normalizing" cross-browser css stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- linking to css stylesheet specific to all Basic-Portfolio files -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- viewport tag for functional responsive design -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<!-- header -->
+	<div class="header">
+		<!-- header logo -->
+		<div class="logo">
+			<h1>Carly Sullivan</h1>
+		</div>
+		<!-- header navigation -->
+		<div class="navigation">	
+			<a href="index.html" target="_blank" class="vertical-line">About</a>
+			<a href="portfolio.html" target="_blank" class="vertical-line">Portfolio</a>
+			<a href="contact.html" target="_blank">Contact</a>
+		</div>
+
+	</div>
+
+		<!-- body content excluding header, push div, and footer -->
+		<div class="wrapper">
+		
+		<!-- main content section common to all html files excluding index.html -->
+		<section class="main-content">
+
+			<h2>Contact</h2>
+			<hr>
+
+			<!-- form for user to complete -->
+			<form action="mailto:carlysullivan2@gmail.com" method="post" enctype="text/plain">
+			
+				<label>Name
+
+				<br>
+				<input type="text" placeholder="John Smith" name="name"></label>
+			
+				<br>
+				<br>
+
+				<label>E-mail<br>
+
+				<input type="text" required placeholder="JohnSmith123@gmail.com" name="e-mail"></label>
+
+				<br>
+				<br>
+			
+				<label>Message<br>
+				<textarea placeholder="John Smith" type ="text" rows="6" name="message"></textarea></label>
+				
+				<br>
+				<br>
+
+				<!-- button inside form -->
+				<button type="submit">Submit</button>
+			</form>
+
+		</section>
+
+		<!-- Sidebar linking to outside profiles -->
+		<section id="contact-info">	
+	
+			<h3>Connect With Me</h3>
+			<hr class="hr">
+			<div class="icons-group">	
+				<a href="https://www.github.com/carlynsullivan" target="_blank"><img src="assets/images/GitHubBlkSqIcon.png" class="icons icon-gh"></a>
+
+				<a href="http://www.linkedin.com/in/carlynsullivan" target="_blank"><img src="assets/images/LinkedInBluSqIcon.png" class="icons icon-li"></a>
+
+				<a href="http://stackoverflow.com/users/6832891/carly" target="_blank"><img src="assets/images/StackOverflowOrSqIcon.png" class="icons icon-so"></a>
+					
+		</section>
+
+	</div>
+
+	<!-- push div to accomodate sticky footer -->
+	<div class="push"></div>
+
+	<!-- footer -->
+	<div class="footer">
+	<!-- copyright -->
+	<h5>&copy; Copyright 2016 Carly Sullivan</h5></footer>
+</body>
+</html>
