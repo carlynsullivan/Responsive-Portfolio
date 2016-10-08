@@ -6,8 +6,13 @@ body {
 	color: #777;
 }
 
+html, body {
+	height: 100%;
+}
+
 * {
 	box-sizing: border-box;
+	margin: 0;
 }
 
 /*general*/
@@ -85,9 +90,20 @@ nav a:first-child {
 	border-left: 0 none;
 }
 
+nav a:last-child {
+	margin-right: 15px;
+}
+
+#masthead a:hover {
+	text-decoration: underline;
+}
+
 /*footer*/
 
 footer {
+	position: relative;
+	bottom: 0;
+	height: 20%;
 	background: #666;
 	color: #fff;
 	padding: 30px 0;
@@ -96,6 +112,10 @@ footer {
 	color: #ccc;
 	font-size: 12px;
 	text-align: center;
+}
+
+footer, .push {
+	height: 20%;
 }
 
 /*sidebar*/
@@ -131,13 +151,17 @@ h3,
 
 #main-container {
 	padding-top: 130px;
+	min-height: 100%
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -2em;
 }
 .main-section {
 	background: #fff;
 	padding: 30px;
 	margin: 0 0 40px 0;
 	width: 100%;
-	max-width: 650px;
+	max-width: 690px;
 	float: left;
 	border: 1px solid #ddd;
 }
@@ -217,3 +241,156 @@ input[type=submit] {
 	padding: 10px 30px;
 	cursor: pointer;
 }
+
+/*media queries*/
+
+@media screen and (max-width: 980px) {
+	#main-container {
+		width: 100%;
+		padding-top: 0px;
+	}
+
+	#logo {
+		margin-left: 10%;
+	}
+
+	.sidebar {
+		max-width: 270px;
+		width: 100%;
+		left: 5%;
+		float: right;
+	}
+
+	.main-section {
+		max-width: 40%;
+		overflow: hidden;
+		position: absolute;
+		top: 20%;
+		margin-left: 60px;
+		float: left;
+	}
+
+	.auth-image {
+		clear: both;
+		width: 100px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	#main-container {
+		width: 100%;
+		padding-top: 0px;
+	}
+
+	#logo {
+		margin-left: 5%;
+	}
+
+	}
+	.main-section {
+		width: 120%;
+		min-height: 800px;
+		overflow: hidden;
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		clear: both;
+	}
+
+	.auth-image {
+		width: 50%;
+		display: block;
+		margin-bottom: 0%;
+	}
+
+	.work {
+		width: 45%;
+		height: 30%;
+	}
+
+	.sidebar {
+		max-width: 800px;
+		width: 90%;
+		min-height: 200px;
+		overflow: hidden;
+		position: absolute;
+		left: 5%;
+		top: 175%;
+		clear: both;
+		display: block;
+	}
+
+	footer {
+		clear: both;
+		margin-top: 100%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	#masthead {
+		position: static;
+	}
+
+	#main-container {
+		width: 100%;
+		padding-top: 0px;
+	}
+
+	#logo {
+		width: 100%;
+		display: block;
+		clear: both;
+	}
+
+	nav {
+		width: 100%;
+		height: 50px;
+		clear: both;
+		margin-top: 15px;
+	}
+
+	nav a {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	.main-section {
+		width: 90%;
+		min-height: 800px;
+		overflow: hidden;
+		position: absolute;
+		left: 5%;
+		clear: both;
+		display: block;
+	}
+
+	.auth-image {
+		width: 95%;
+		display: block;
+		margin-bottom: 5%;
+	}
+
+	.work {
+		width: 90%;
+		height: 30%;
+	}
+
+	.sidebar {
+		max-width: 900px;
+		width: 90%;
+		min-height: 200px;
+		overflow: hidden;
+		position: absolute;
+		left: 5%;
+		top: 365%;
+		clear: both;
+		display: block;
+	}
+
+	footer {
+		clear: both;
+		margin-top: 260%;
+	}
+}
+
